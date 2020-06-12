@@ -1,0 +1,30 @@
+{
+  "name": "scantron",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node prisma/seed.js"
+  },
+  "dependencies": {
+    "@prisma/client": "2.0.0",
+    "async": "^2.6.3",
+    "body-parser": "1.19.0",
+    "cidr-js": "git+https://github.com/jas-/cidr-js.git#v2.3.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "deepmerge": "^2.2.1",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "hasbin": "^1.2.3",
+    "ip-address": "^5.9.4",
+    "morgan": "^1.10.0",
+    "netmask": "^1.0.6",
+    "stack-trace": "0.0.10",
+    "winston": "^3.2.1",
+    "xml2js": "^0.4.22"
+  },
+  "devDependencies": {
+    "@prisma/cli": "2.0.0"
+  }
+}

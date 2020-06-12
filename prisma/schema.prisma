@@ -1,0 +1,24 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Host {
+  id    Int @id @default(uuid())
+  identifier String? @unique
+  scans Scan[]
+}
+
+model Scan {
+  id    Int @id @default(uuid())
+  scanner String @default("nmap")
+  version String?
+  completed Boolean @default(false)
+  command String?
+  scanSummary String?
+  portSummary String?
+}
