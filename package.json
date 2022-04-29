@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@prisma/client": "2.0.0",
-    "async": "^2.6.3",
+    "async": "^2.6.4",
     "body-parser": "1.19.0",
     "cidr-js": "git+https://github.com/jas-/cidr-js.git#v2.3.2",
     "compression": "^1.7.4",
